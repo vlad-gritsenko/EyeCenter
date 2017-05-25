@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
   font-family: 'Gotham-Medium';
   src: url('../fonts/Gotham-Medium.ttf');
 }

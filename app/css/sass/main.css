@@ -1,4 +1,4 @@
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -11,6 +11,7 @@ a, a:visited {
 
 header {
   padding-top: 85px;
+  padding-bottom: 200px;
   background-color: #f2ebe6; }
 
 .top {
@@ -29,16 +30,19 @@ header {
   margin-bottom: 200px; }
 
 .logo {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Light";
   font-size: 48px;
   line-height: 24px;
   color: #303437; }
+  .logo .logo-bold {
+    font-family: "Roboto-Medium";
+    font-size: 48px; }
 
 nav {
   max-width: 430px; }
   nav a {
     margin-right: 25px;
-    font-family: "Ghotam-Medium";
+    font-family: "Gotham-Medium";
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
@@ -48,10 +52,12 @@ nav {
       margin-right: 0; }
 
 .user-buttons {
-  font-family: "Ghotam-Medium";
+  font-family: "Gotham-Medium";
   font-size: 14px;
   color: #212121;
   text-transform: uppercase; }
+  .user-buttons a {
+    color: #212121; }
   .user-buttons .fa-search {
     margin-right: 20px;
     color: #a77c5a; }
@@ -84,7 +90,7 @@ nav {
   display: inline-block;
   font-family: "Gotham-Bold";
   font-size: 140px;
-  color: #fff;
+  colearlor: #fff;
   text-transform: uppercase; }
 
 .women-sunglasses,
@@ -109,3 +115,145 @@ nav {
       width: 1px;
       height: 14px;
       background-color: #a77c5a; }
+
+.news-and-features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -100px; }
+
+.news-title {
+  position: absolute;
+  right: 70px;
+  bottom: 150px;
+  width: 275px;
+  text-align: center;
+  font-family: "Gotham-Bold";
+  font-size: 30px;
+  color: #fff; }
+
+.learn-more {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  padding: 30px 50px 30px 70px;
+  border: 1px solid #fff;
+  font-family: "Gotham-Bold";
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase; }
+  .learn-more .fa-angle-right {
+    margin-left: 70px; }
+
+.news-item-1 {
+  position: relative;
+  width: 700px;
+  height: 620px;
+  overflow: hidden; }
+  .news-item-1 img {
+    position: absolute;
+    left: -400px;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+    z-index: 0; }
+
+.news-item-2 {
+  position: relative;
+  width: 500px;
+  height: 915px;
+  overflow: hidden; }
+  .news-item-2 img {
+    position: absolute;
+    left: -650px;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+    z-index: 0; }
+
+.features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  height: 250px;
+  margin-top: 45px;
+  border: 1px solid #a77c5a;
+  font-family: "Gotham-Bold";
+  font-size: 24px;
+  color: #a77c5a;
+  text-transform: uppercase; }
+
+.free-shipping {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 100px 0 100px; }
+  .free-shipping::after {
+    position: absolute;
+    right: -70px;
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: #a77c5a; }
+
+.truck-icon {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-image: url(../../img/features-sprite.png); }
+
+.free-return {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px; }
+
+.return-icon {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-image: url(../../img/features-sprite.png);
+  background-position: 100% 50%; }
+
+.worldwide {
+  font-size: 14px;
+  color: grey; }
