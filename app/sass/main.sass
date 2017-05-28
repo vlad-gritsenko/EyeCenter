@@ -67,6 +67,7 @@ nav
 .top-header-sunglasses
   position: relative
   display: flex
+  flex-wrap: wrap
 
 .women,
 .men
@@ -114,6 +115,7 @@ nav
   position: relative
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
   margin-top: -100px
 
 .vertical-text
@@ -190,6 +192,12 @@ nav
     filter: brightness(.8)
     z-index: 0
 
+  .news-title
+    right: 20%
+  .button
+    right: 15%
+
+
 .features
   display: flex
   justify-content: space-between
@@ -208,6 +216,7 @@ nav
   justify-content: center
   align-items: center
   margin: 0 100px 0 100px
+  text-align: center
 
   &::after
     position: absolute
@@ -260,6 +269,7 @@ nav
     border-color: #000
 
 .product-glasses
+  position: relative
   display: flex
   flex-direction: column
   align-items: center
@@ -271,6 +281,10 @@ nav
       display: block
     .glasses-border
       border: 20px solid $beige
+
+.glasses-image
+  position: absolute
+  left: -40px
 
 .glasses-border
   position: relative
@@ -284,6 +298,7 @@ nav
   display: none
   position: absolute
   left: 50%
+  bottom: 20px
   color: $brown
   font-size: 24px
 
@@ -305,6 +320,7 @@ nav
   position: relative
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
   margin-top: 200px
 
   .vertical-text
@@ -325,6 +341,7 @@ nav
   display: flex
   justify-content: space-between
   align-items: center
+  flex-wrap: wrap
   padding: 100px 0 100px 0
 
   .vertical-text
@@ -353,11 +370,13 @@ nav
 .bottom-news
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
 
 .bottom-news-item
   position: relative
   width: 400px
   height: 400px
+  margin-top: 35px
   overflow: hidden
 
   .bottom-news-image
@@ -391,7 +410,7 @@ nav
     top: 105px
 
 .email-title
-  width: 650px
+  max-width: 650px
   @include font('Gotham-Medium', 24px)
   line-height: 30px
   text-align: center
@@ -400,12 +419,14 @@ nav
 .email-wrap
   display: flex
   align-items: center
-  width: 650px
+  max-width: 650px
+  min-width: 320px
   height: 75px
   border: 1px solid $beige
 
   input
-    width: 575px
+    max-width: 575px
+    min-width: 280px
     height: 25px
     padding: 25px 0 25px 25px
     border: none
@@ -473,7 +494,10 @@ footer
   height: 50px
   filter: grayscale(100%)
   margin-left: auto
+
 .bottom-logo-2
   width: 150px
   height: 50px
   filter: grayscale(100%)
+
+@import "../sass/_media.sass"

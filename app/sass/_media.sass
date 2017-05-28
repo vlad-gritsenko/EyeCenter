@@ -1,0 +1,149 @@
+@media screen and (max-width: 1520px)
+  .vertical-text
+    display: none
+
+  .best-sellers
+    .product-glasses:nth-child(2),
+    .product-glasses:nth-child(3),
+    .product-glasses:nth-child(4),
+    .product-glasses:nth-child(5)
+      flex-basis: 50%
+
+  .new-arrivals
+    .product-glasses:nth-child(2),
+    .product-glasses:nth-child(3),
+    .product-glasses:nth-child(4),
+    .product-glasses:nth-child(5)
+      flex-basis: 50%
+
+@media screen and (max-width: 1260px)
+  .top-header-sunglasses
+    justify-content: center
+
+@media screen and (max-width: 1200px)
+  .news-and-features
+    justify-content: center
+
+  .news-wrap-items
+    margin-top: 50px
+
+  .news-item-2
+    order: -1
+
+  .bottom-news
+    justify-content: space-around
+
+    .bottom-news-item:nth-child(3)
+
+@media screen and (max-width: 1080px)
+
+  .brands-wrap
+    .brand-item:nth-child(2),
+    .brand-item:nth-child(3),
+    .brand-item:nth-child(4),
+    .brand-item:nth-child(5)
+      flex-basis: 50%
+
+
+@media screen and (max-width: 840px)
+
+  .best-sellers
+    .product-glasses:nth-child(2),
+    .product-glasses:nth-child(3),
+    .product-glasses:nth-child(4),
+    .product-glasses:nth-child(5)
+      flex-basis: 100%
+
+    .button
+      right: 30%
+
+  .new-arrivals
+    .product-glasses:nth-child(2),
+    .product-glasses:nth-child(3),
+    .product-glasses:nth-child(4),
+    .product-glasses:nth-child(5)
+      flex-basis: 100%
+
+
+
+@media screen and (max-width: 700px)
+  .top
+    flex-wrap: wrap
+  nav
+    display: flex
+    flex-direction: column
+    margin-top: 50px
+    order: 3
+    flex-basis: 100%
+
+  .women-sunglasses,
+  .men-sunglasses
+    width: 100%
+    height: auto
+
+  .women-title-light,
+  .men-title-light
+    margin-bottom: 20px
+    @include font ('Gotham-Light', 72px)
+
+  .women-title-bold,
+  .men-title-bold
+    margin-bottom: 20px
+    @include font ('Gotham-Bold', 72px)
+
+  .news-wrap-items
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .news-item-1
+    max-width: 320px
+
+
+  .features
+    width: 100%
+    flex-direction: column
+
+  .free-shipping
+    &::after
+      display: none
+
+  .best-sellers,
+  .new-arrivals
+    .button
+      right: 0
+
+@media screen and (max-width: 616px)
+  .otherinfo
+    margin-top: 20px
+
+@media screen and (max-width: 540px)
+  .footer-bottom
+    flex-direction: column
+    align-items: center
+
+  .bottom-logo-1
+    margin: 40px 0 40px 0
+
+  .bottom-news
+    .button
+      padding: 5px
+      right: 20%
+
+  .brands-wrap
+    justify-content: center
+
+  .news-item-1
+    .news-title
+      right: 10%
+
+    .button
+      padding: 5px
+      right: 20%
+
+  .news-item-2
+    .news-title
+      right: 10%
+    .button
+      padding: 5px
+      right: 20%
