@@ -7,6 +7,13 @@
 a, a:visited
   text-decoration: none
 
+ul
+  margin: 0
+  padding: 0
+
+li
+  list-style-type: none
+
 .container
   margin: 0 auto
   max-width: 1300px
@@ -36,7 +43,7 @@ nav
     @include font ('Gotham-Medium', 14px)
     line-height: 24px
     font-weight: bold
-    color: #212121
+    color: $text-color
     text-transform: uppercase
 
     &:last-child
@@ -44,11 +51,11 @@ nav
 
 .user-buttons
   @include font ('Gotham-Medium', 14px)
-  color: #212121
+  color: $text-color
   text-transform: uppercase
 
   a
-    color: #212121
+    color: $text-color
 
   .fa-search
     margin-right: 20px
@@ -66,18 +73,18 @@ nav
   width: 630px
   text-align: center
 
-.wo-title,
-.m-title
+.women-title-light,
+.men-title-light
   display: inline-block
   @include font ('Gotham-Light', 140px)
   color: #fff
   text-transform: uppercase
 
-.wo-men-title,
-.m-en-title
+.women-title-bold,
+.men-title-bold
   display: inline-block
   @include font ('Gotham-Bold', 140px)
-  colearlor: #fff
+  color: #fff
   text-transform: uppercase
 
 .women-sunglasses,
@@ -104,9 +111,37 @@ nav
       background-color: $brown
 
 .news-and-features
+  position: relative
   display: flex
   justify-content: space-between
   margin-top: -100px
+
+.vertical-text
+  position: absolute
+  top: 90px
+  left: -200px
+  transform: rotate(-90deg)
+  text-transform: uppercase
+  line-height: 24px
+  color: $text-color
+
+  &::before
+    content: ''
+    position: absolute
+    left: -40px
+    bottom: 55%
+    width: 20px
+    height: 1px
+    background-color: $text-color
+
+
+.vert-light
+  @include font ('Gotham-Regular', 24px)
+
+.vert-bold
+  @include font ('Gotham-Bold', 24px)
+
+
 
 .news-title
   position: absolute
@@ -117,7 +152,7 @@ nav
   @include font ('Gotham-Bold', 30px)
   color: #fff
 
-.learn-more
+.button
   position: absolute
   right: 50px
   bottom: 30px
@@ -206,3 +241,239 @@ nav
 .worldwide
   font-size: 14px
   color: grey
+
+.best-sellers
+  position: relative
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 50px
+
+  .vertical-text
+    top: 170px
+
+  .button
+    position: absolute
+    right: 35%
+    bottom: -150px
+    color: #000
+    border-color: #000
+
+.product-glasses
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 220px
+
+  &:hover
+    cursor:  pointer
+    .fa.fa-plus
+      display: block
+    .glasses-border
+      border: 20px solid $beige
+
+.glasses-border
+  position: relative
+  width: 220px
+  height: 350px
+  margin-bottom: 20px
+  border: 20px solid #fff
+
+
+.fa.fa-plus
+  display: none
+  position: absolute
+  left: 50%
+  color: $brown
+  font-size: 24px
+
+.glasses-name
+  @include font ('Gotham-Medium', 18px)
+  line-height: 24px
+  color: $brown
+  text-transform: uppercase
+  text-align: center
+
+.glasses-price
+  margin-top: 20px
+  @include font ('Gotham-Bold', 30px)
+  line-height: 24px
+  color: black
+  text-transform: uppercase
+
+.new-arrivals
+  position: relative
+  display: flex
+  justify-content: space-between
+  margin-top: 200px
+
+  .vertical-text
+    top: 170px
+  .button
+    position: absolute
+    right: 35%
+    bottom: -150px
+    color: #000
+    border-color: #000
+
+.brands
+  margin-top: 250px
+  background-color: #e5e5e5
+
+.brands-wrap
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 100px 0 100px 0
+
+  .vertical-text
+    left: -160px
+    top: -30px
+
+.brand-item
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.brand-image-box
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 270px
+  height: 270px
+  border: 1px solid #aaaaaa
+
+.num-of-products
+  margin-top: 15px
+  @include font('Gotham-Medium', 18px)
+  line-height: 24px
+  color: $brown
+
+.bottom-news
+  display: flex
+  justify-content: space-between
+
+.bottom-news-item
+  position: relative
+  width: 400px
+  height: 400px
+  overflow: hidden
+
+  .bottom-news-image
+    position: absolute
+    left: -300px
+    filter: brightness(.8)
+    z-index: -1
+
+  .b-news-item-text
+    position: absolute
+    bottom: 120px
+    margin-bottom: 10px
+    @include font('Gotham-Medium', 30px)
+    color: #fff
+    text-align: center
+
+  .button
+    right: 40px
+
+.subscribe-email
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: 100px
+  margin-bottom: 150px
+
+  .vertical-text
+    left: -195px
+    top: 105px
+
+.email-title
+  width: 650px
+  @include font('Gotham-Medium', 24px)
+  line-height: 30px
+  text-align: center
+  color: $brown
+
+.email-wrap
+  display: flex
+  align-items: center
+  width: 650px
+  height: 75px
+  border: 1px solid $beige
+
+  input
+    width: 575px
+    height: 25px
+    padding: 25px 0 25px 25px
+    border: none
+
+  input[placeholder]
+    @include font('Gotham-Medium', 18px)
+    line-height: 24px
+    text-transform: uppercase
+    outline: none
+
+  .fa-paper-plane
+    padding: 29px
+    color: $brown
+    background-color: $beige
+    border-left: none
+
+footer
+  background-color: $beige
+
+.footer-content
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  flex-wrap: wrap
+  padding: 100px 0 0 90px
+  margin-bottom: 50px
+
+  li
+    @include font('Gotham-Medium', 18px)
+    line-height: 24px
+    a
+      color: #b2b2b2
+
+.footer-brands-title,
+.otherinfo-title
+  margin-bottom: 30px
+  .light
+    margin-right: -5px
+    @include font('Gotham-Light', 24px)
+    line-height: 24px
+    text-transform: uppercase
+    color: $brown
+
+  .bold
+    @include font('Gotham-Bold', 24px)
+    line-height: 24px
+    text-transform: uppercase
+    color: $brown
+
+.otherinfo
+  align-self: flex-start
+
+.footer-bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 50px 0 50px 0
+  border-top: 1px solid $brown
+
+  .logo
+    color: #b8b3b0
+
+.bottom-logo-1
+  width: 200px
+  height: 50px
+  filter: grayscale(100%)
+  margin-left: auto
+.bottom-logo-2
+  width: 150px
+  height: 50px
+  filter: grayscale(100%)

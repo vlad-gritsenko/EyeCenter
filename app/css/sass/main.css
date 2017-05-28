@@ -5,6 +5,13 @@
 a, a:visited {
   text-decoration: none; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
 .container {
   margin: 0 auto;
   max-width: 1300px; }
@@ -77,20 +84,20 @@ nav {
   width: 630px;
   text-align: center; }
 
-.wo-title,
-.m-title {
+.women-title-light,
+.men-title-light {
   display: inline-block;
   font-family: "Gotham-Light";
   font-size: 140px;
   color: #fff;
   text-transform: uppercase; }
 
-.wo-men-title,
-.m-en-title {
+.women-title-bold,
+.men-title-bold {
   display: inline-block;
   font-family: "Gotham-Bold";
   font-size: 140px;
-  colearlor: #fff;
+  color: #fff;
   text-transform: uppercase; }
 
 .women-sunglasses,
@@ -117,6 +124,7 @@ nav {
       background-color: #a77c5a; }
 
 .news-and-features {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,6 +134,33 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: -100px; }
+
+.vertical-text {
+  position: absolute;
+  top: 90px;
+  left: -200px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #212121; }
+  .vertical-text::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    bottom: 55%;
+    width: 20px;
+    height: 1px;
+    background-color: #212121; }
+
+.vert-light {
+  font-family: "Gotham-Regular";
+  font-size: 24px; }
+
+.vert-bold {
+  font-family: "Gotham-Bold";
+  font-size: 24px; }
 
 .news-title {
   position: absolute;
@@ -137,7 +172,7 @@ nav {
   font-size: 30px;
   color: #fff; }
 
-.learn-more {
+.button {
   position: absolute;
   right: 50px;
   bottom: 30px;
@@ -148,7 +183,7 @@ nav {
   line-height: 24px;
   color: #fff;
   text-transform: uppercase; }
-  .learn-more .fa-angle-right {
+  .button .fa-angle-right {
     margin-left: 70px; }
 
 .news-item-1 {
@@ -257,3 +292,337 @@ nav {
 .worldwide {
   font-size: 14px;
   color: grey; }
+
+.best-sellers {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 50px; }
+  .best-sellers .vertical-text {
+    top: 170px; }
+  .best-sellers .button {
+    position: absolute;
+    right: 35%;
+    bottom: -150px;
+    color: #000;
+    border-color: #000; }
+
+.product-glasses {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px; }
+  .product-glasses:hover {
+    cursor: pointer; }
+    .product-glasses:hover .fa.fa-plus {
+      display: block; }
+    .product-glasses:hover .glasses-border {
+      border: 20px solid #f2ebe6; }
+
+.glasses-border {
+  position: relative;
+  width: 220px;
+  height: 350px;
+  margin-bottom: 20px;
+  border: 20px solid #fff; }
+
+.fa.fa-plus {
+  display: none;
+  position: absolute;
+  left: 50%;
+  color: #a77c5a;
+  font-size: 24px; }
+
+.glasses-name {
+  font-family: "Gotham-Medium";
+  font-size: 18px;
+  line-height: 24px;
+  color: #a77c5a;
+  text-transform: uppercase;
+  text-align: center; }
+
+.glasses-price {
+  margin-top: 20px;
+  font-family: "Gotham-Bold";
+  font-size: 30px;
+  line-height: 24px;
+  color: black;
+  text-transform: uppercase; }
+
+.new-arrivals {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 200px; }
+  .new-arrivals .vertical-text {
+    top: 170px; }
+  .new-arrivals .button {
+    position: absolute;
+    right: 35%;
+    bottom: -150px;
+    color: #000;
+    border-color: #000; }
+
+.brands {
+  margin-top: 250px;
+  background-color: #e5e5e5; }
+
+.brands-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0 100px 0; }
+  .brands-wrap .vertical-text {
+    left: -160px;
+    top: -30px; }
+
+.brand-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.brand-image-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 270px;
+  border: 1px solid #aaaaaa; }
+
+.num-of-products {
+  margin-top: 15px;
+  font-family: "Gotham-Medium";
+  font-size: 18px;
+  line-height: 24px;
+  color: #a77c5a; }
+
+.bottom-news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.bottom-news-item {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden; }
+  .bottom-news-item .bottom-news-image {
+    position: absolute;
+    left: -300px;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+    z-index: -1; }
+  .bottom-news-item .b-news-item-text {
+    position: absolute;
+    bottom: 120px;
+    margin-bottom: 10px;
+    font-family: "Gotham-Medium";
+    font-size: 30px;
+    color: #fff;
+    text-align: center; }
+  .bottom-news-item .button {
+    right: 40px; }
+
+.subscribe-email {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px; }
+  .subscribe-email .vertical-text {
+    left: -195px;
+    top: 105px; }
+
+.email-title {
+  width: 650px;
+  font-family: "Gotham-Medium";
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #a77c5a; }
+
+.email-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 650px;
+  height: 75px;
+  border: 1px solid #f2ebe6; }
+  .email-wrap input {
+    width: 575px;
+    height: 25px;
+    padding: 25px 0 25px 25px;
+    border: none; }
+  .email-wrap input[placeholder] {
+    font-family: "Gotham-Medium";
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    outline: none; }
+  .email-wrap .fa-paper-plane {
+    padding: 29px;
+    color: #a77c5a;
+    background-color: #f2ebe6;
+    border-left: none; }
+
+footer {
+  background-color: #f2ebe6; }
+
+.footer-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 100px 0 0 90px;
+  margin-bottom: 50px; }
+  .footer-content li {
+    font-family: "Gotham-Medium";
+    font-size: 18px;
+    line-height: 24px; }
+    .footer-content li a {
+      color: #b2b2b2; }
+
+.footer-brands-title,
+.otherinfo-title {
+  margin-bottom: 30px; }
+  .footer-brands-title .light,
+  .otherinfo-title .light {
+    margin-right: -5px;
+    font-family: "Gotham-Light";
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #a77c5a; }
+  .footer-brands-title .bold,
+  .otherinfo-title .bold {
+    font-family: "Gotham-Bold";
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #a77c5a; }
+
+.otherinfo {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 50px 0;
+  border-top: 1px solid #a77c5a; }
+  .footer-bottom .logo {
+    color: #b8b3b0; }
+
+.bottom-logo-1 {
+  width: 200px;
+  height: 50px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin-left: auto; }
+
+.bottom-logo-2 {
+  width: 150px;
+  height: 50px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
