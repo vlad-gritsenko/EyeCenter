@@ -1,3 +1,3 @@
 # EyeCenter
 
-(Demo)[https://vlad-gritsenko.github.io/EyeCenter/app]
+[Demo](https://vlad-gritsenko.github.io/EyeCenter/app)
