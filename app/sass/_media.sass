@@ -2,23 +2,26 @@
   .vertical-text
     display: none
 
-  .best-sellers
+  .product-glasses-wrapper
+    .product-glasses:nth-child(1),
     .product-glasses:nth-child(2),
     .product-glasses:nth-child(3),
-    .product-glasses:nth-child(4),
-    .product-glasses:nth-child(5)
-      flex-basis: 50%
-
-  .new-arrivals
-    .product-glasses:nth-child(2),
-    .product-glasses:nth-child(3),
-    .product-glasses:nth-child(4),
-    .product-glasses:nth-child(5)
+    .product-glasses:nth-child(4)
       flex-basis: 50%
 
 @media screen and (max-width: 1260px)
   .top-header-sunglasses
     justify-content: center
+
+  .women
+    margin-bottom: 100px
+
+    img
+      margin: 0
+
+
+  .men img
+    margin: 0
 
 @media screen and (max-width: 1200px)
   .news-and-features
@@ -47,31 +50,31 @@
 
 @media screen and (max-width: 840px)
 
-  .best-sellers
+  .product-glasses-wrapper
+    .product-glasses:nth-child(1),
     .product-glasses:nth-child(2),
     .product-glasses:nth-child(3),
-    .product-glasses:nth-child(4),
-    .product-glasses:nth-child(5)
+    .product-glasses:nth-child(4)
       flex-basis: 100%
 
-    .button
-      right: 30%
-
-  .new-arrivals
-    .product-glasses:nth-child(2),
-    .product-glasses:nth-child(3),
-    .product-glasses:nth-child(4),
-    .product-glasses:nth-child(5)
-      flex-basis: 100%
 
 
 
 @media screen and (max-width: 700px)
+  header .container
+    padding: 0 20px
+
   .top
     flex-wrap: wrap
+    justify-content: center
+
+  .logo
+    margin-right: auto
+
   nav
     display: flex
-    flex-direction: column
+    justify-content: space-between
+    flex-wrap: wrap
     margin-top: 50px
     order: 3
     flex-basis: 100%
@@ -99,14 +102,18 @@
   .news-item-1
     max-width: 320px
 
-
   .features
     width: 100%
     flex-direction: column
 
   .free-shipping
+    margin-top: 20px
+
     &::after
       display: none
+
+  .free-return
+    margin-bottom: 20px
 
   .best-sellers,
   .new-arrivals
@@ -125,11 +132,6 @@
   .bottom-logo-1
     margin: 40px 0 40px 0
 
-  .bottom-news
-    .button
-      padding: 5px
-      right: 20%
-
   .brands-wrap
     justify-content: center
 
@@ -138,12 +140,34 @@
       right: 10%
 
     .button
-      padding: 5px
+      // padding: 5px
       right: 20%
 
   .news-item-2
     .news-title
       right: 10%
     .button
-      padding: 5px
+      // padding: 5px
       right: 20%
+
+@media screen and (max-width: 436px)
+
+  .logo
+    display: block
+    margin-right: 10px
+
+  nav
+    justify-content: center
+
+
+  .women-title-light,
+  .women-title-bold
+    font-size: 52px
+
+@media screen and (max-width: 350px)
+  .product-glasses
+    overflow: hidden
+
+  .features
+    border-left: none
+    border-right: none
